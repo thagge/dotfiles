@@ -81,3 +81,15 @@ dploy stow nvim #path_to_your_user_folder#/.config
 ```
 
 </details>
+
+## Tmux
+
+Default config placement ~/.config/tmux
+
+Follow the instructions for installation at [Their official site](https://github.com/tmux/tmux/wiki/Installing)
+
+In the directory where you cloned this repo run
+
+```zsh
+stow tmux
+```
