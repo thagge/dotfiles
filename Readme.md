@@ -80,7 +80,7 @@ stow starship
 <summary>Windows</summary>
 
 ```powershell
-dploy stow nvim #path_to_your_user_folder#/.config
+dploy stow starship #path_to_your_user_folder#/.config
 ```
 
 </details>
