@@ -12,11 +12,8 @@ brew install stow
 
 ### Windows
 
-If you are using windows you need to install [Dploy](https://github.com/arecarn/dploy) and run
-
-```powershell
-dploy stow %package% %source-directory%
-```
+If you are using windows you need to install [Dploy](https://github.com/arecarn/dploy), this is a python wrapper for windows
+with the same functionality as stow, it runs it internally
 
 ## Powershell
 
@@ -80,7 +77,7 @@ stow starship
 <summary>Windows</summary>
 
 ```powershell
-dploy stow starship #path_to_your_user_folder#/.config
+dploy stow nvim #path_to_your_user_folder#/.config
 ```
 
 </details>
