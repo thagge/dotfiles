@@ -51,7 +51,7 @@ return {
 			-- servers for mason to install
 			ensure_installed = {
 				"lua_ls",
-				"svelte-language-server",
+				"svelte",
 				"ts_ls", -- currently using a ts plugin
 				"html",
 				"cssls",
@@ -74,7 +74,7 @@ return {
 				"pylint",
 				"clangd",
 				"denols",
-				"svelte-language-server",
+				"svelte",
 			},
 
 			-- NOTE: mason BREAKING Change! Removed setup_handlers

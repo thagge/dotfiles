@@ -144,7 +144,15 @@ return {
 					{ section = "startup" },
 					{
 						section = "terminal",
-						cmd = "ascii-image-converter ~/Pictures/Me.jpeg -C -c",
+						cmd = (function()
+							local startPath
+							if vim.fn.has("win32") then
+								startPath = "c:/Users/anils122"
+							else
+								startPath = "~"
+							end
+							return "ascii-image-converter " .. startPath .. "/Pictures/Me.jpeg -C -c"
+						end)(),
 						random = 15,
 						pane = 2,
 						indent = 15,
@@ -195,7 +203,13 @@ return {
 			{
 				"<leader>pc",
 				function()
-					require("snacks").picker.files({ cwd = "~/dotfiles/nvim/.config/nvim/lua" })
+					local startPath
+					if vim.fn.has("win32") then
+						startPath = "C:"
+					else
+						startPath = "~"
+					end
+					require("snacks").picker.files({ cwd = startPath .. "/dotfiles/nvim/.config/nvim/lua" })
 				end,
 				desc = "Find Config File",
 			},
