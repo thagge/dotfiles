@@ -18,6 +18,18 @@ If you are using windows you need to install [Dploy](https://github.com/arecarn/
 dploy stow %package% %source-directory%
 ```
 
+## Powershell
+
+If you are on windows start with this in order for nvim to work properly and
+starship
+
+```powershell
+dploy stow powershell #path_to_your_documents#/PowerShell
+```
+
+This will make sure that nvim looks for the config in the correct path and loads
+starship for your beautiful terminal
+
 ## Nvim
 
 Default config placement ~/.config/nvim
@@ -26,15 +38,23 @@ Download the executable for neovim from [Their Official Download Page](https://g
 
 In the directory where you cloned this repo run
 
+<details>
+<summary>Macos and linux</summary>
+
 ```zsh
 stow nvim
 ```
 
-For it to work on windows you must also run
+</details>
 
+<details>
+<summary>Windows</summary>
+    
 ```powershell
-dploy stow powershell #path_to_your_documents#/Powershell
+dploy stow nvim #path_to_your_user_folder#/.config
 ```
+
+</details>
 
 In order for nvim to fetch the correct config files
 
@@ -56,12 +76,11 @@ stow starship
 ```
 
 </details>
-
 <details>
 <summary>Windows</summary>
 
 ```powershell
-dploy stow nvim #path_to_your_user_folder#
+dploy stow nvim #path_to_your_user_folder#/.config
 ```
 
 </details>
