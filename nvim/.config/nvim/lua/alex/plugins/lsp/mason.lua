@@ -40,10 +40,6 @@ return {
 					package_uninstalled = "✗",
 				},
 			},
-			ensure_installed = {
-				"roslyn",
-				"rzls",
-			},
 		})
 
 		mason_lspconfig.setup({
@@ -61,8 +57,6 @@ return {
 				"emmet_language_server",
 				-- "eslint",
 				"marksman",
-				"roslyn",
-				"rzls",
 			},
 		})
 
