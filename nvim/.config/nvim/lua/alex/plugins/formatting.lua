@@ -30,6 +30,7 @@ return {
 				javascriptreact = { "prettier" },
 				typescriptreact = { "prettier" },
 				css = { "prettier" },
+				http = { "kulala-fmt" },
 				html = { "prettier" },
 				svelte = { "prettier" },
 				json = { "prettier" },

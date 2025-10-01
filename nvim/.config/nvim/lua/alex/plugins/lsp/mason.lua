@@ -65,6 +65,7 @@ return {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"isort", -- python formatter
+				"kulala-fmt", --http formatter
 				"pylint",
 				"clangd",
 				"denols",
