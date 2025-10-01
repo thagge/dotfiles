@@ -146,7 +146,8 @@ return {
 						section = "terminal",
 						cmd = (function()
 							local startPath
-							if vim.fn.has("win32") then
+							local utils = require("alex.core.utils")
+							if utils.getOsName() == "Windows" then
 								startPath = "c:/Users/anils122"
 							else
 								startPath = "~"

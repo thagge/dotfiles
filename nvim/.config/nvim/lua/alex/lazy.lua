@@ -26,4 +26,7 @@ require("lazy").setup({
 	change_detection = {
 		notify = false,
 	},
+	rocks = {
+		server = "https://lumen-oss.github.io/rocks-binaries/",
+	},
 })
