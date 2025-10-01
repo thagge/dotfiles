@@ -52,6 +52,14 @@ dploy stow nvim #path_to_your_user_folder#/.config
 ```
 
 </details>
+<details>
+<summary>WSL</summary>
+Same procedure as for Linux but if you get issues from Telescope for fzf run
+
+```bash
+cd ~/.local/share/nvim/lazy/telescope-fzf-native.nvim && make && cd -
+```
+</details>
 
 In order for nvim to fetch the correct config files
 
