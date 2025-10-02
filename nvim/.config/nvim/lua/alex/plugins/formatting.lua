@@ -33,7 +33,7 @@ return {
 				http = { "kulala-fmt" },
 				html = { "prettier" },
 				svelte = { "prettier" },
-				json = { "prettier" },
+				json = { "jq" },
 				yaml = { "prettier" },
 				graphql = { "prettier" },
 				liquid = { "prettier" },

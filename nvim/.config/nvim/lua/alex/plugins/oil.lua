@@ -6,7 +6,7 @@ return {
 			default_file_explorer = true,
 			columns = {},
 			keymaps = {
-				["<C-h>"] = false, -- prevents ctrl c from closibng out of oil,
+				["<C-h>"] = false, -- prevents ctrl c from closing out of oil,
 				["<M-h>"] = "actions.select_split",
 				["q"] = "actions.close",
 			},
