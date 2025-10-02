@@ -4,6 +4,9 @@ vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+-- NOTE: Disabled the mouse
+vim.opt.mouse = ""
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
@@ -26,7 +29,7 @@ vim.opt.background = "dark"
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
-vim.opt.backspace = {"start", "eol", "indent" }
+vim.opt.backspace = { "start", "eol", "indent" }
 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
