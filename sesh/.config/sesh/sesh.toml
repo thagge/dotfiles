@@ -1,11 +1,11 @@
 [[session]]
-name = "My Work"
+name = "My Work (wsl Arch)"
 path = "~/"
 windows = ["My Notes", "Dotfiles"]
 disable_startup_command = true
 
 [[window]]
-name = "My Notes"
+name = "My Notes (wsl Arch)"
 path = "'/mnt/g/Other computers/My Mac/All My Notes'"
 startup_command = "nvim"
 
