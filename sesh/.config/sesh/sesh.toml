@@ -1,0 +1,16 @@
+[[session]]
+name = "My Work"
+path = "~/"
+windows = ["My Notes", "Dotfiles"]
+disable_startup_command = true
+
+[[window]]
+name = "My Notes"
+path = "'/mnt/g/Other computers/My Mac/All My Notes'"
+startup_command = "nvim"
+
+[[window]]
+name = "Dotfiles"
+path = "~/dotfiles"
+startup_command = "nvim"
+preview_command = "lazygit"

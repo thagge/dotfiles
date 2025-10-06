@@ -173,6 +173,12 @@ return {
 		})
 		vim.lsp.enable("svelte")
 		vim.lsp.enable("tailwindcss")
+
+		vim.lsp.config("bashls", {
+			cmd = { "bash-language-server", "start" },
+			filetypes = { "bash", "sh", "bashrc" },
+		})
+		vim.lsp.enable("bashls")
 		-- roslyn
 		vim.lsp.config("roslyn", {})
 	end,
