@@ -1,7 +1,7 @@
 [[session]]
 name = "My Work (wsl Arch)"
 path = "~/"
-windows = ["My Notes", "Dotfiles"]
+windows = ["My Notes (wsl Arch)", "Dotfiles"]
 disable_startup_command = true
 
 [[window]]
