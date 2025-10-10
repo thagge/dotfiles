@@ -57,6 +57,7 @@ return {
 				"emmet_language_server",
 				-- "eslint",
 				"marksman",
+				"biome",
 			},
 		})
 
@@ -70,6 +71,7 @@ return {
 				"clangd",
 				"denols",
 				"svelte",
+				"biome",
 			},
 
 			-- NOTE: mason BREAKING Change! Removed setup_handlers
