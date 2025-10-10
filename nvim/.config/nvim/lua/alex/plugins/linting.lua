@@ -9,11 +9,11 @@ return {
 
 		-- if Eslint error configuration not found : change MasonInstall eslint@version or npm i -g eslint at a specific version
 		lint.linters_by_ft = {
-			javascript = { "eslint_d" },
-			typescript = { "eslint_d" },
-			javascriptreact = { "eslint_d" },
-			typescriptreact = { "eslint_d" },
-			svelte = { "eslint_d" },
+			javascript = { "biomejs" },
+			typescript = { "biomejs" },
+			javascriptreact = { "biomejs" },
+			typescriptreact = { "biomejs" },
+			svelte = { "biomejs" },
 			python = { "pylint" },
 		}
 
@@ -27,15 +27,15 @@ return {
 			end,
 		}
 
-		--vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
-		--	group = lint_augroup,
-		--	callback = function()
-		--		lint.try_lint()
-		--	end,
-		--})
+		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+			group = lint_augroup,
+			callback = function()
+				lint.try_lint()
+			end,
+		})
 
-		--vim.keymap.set("n", "<leader>l", function()
-		--	lint.try_lint()
-		--end, { desc = "Trigger linting for current file" })
+		vim.keymap.set("n", "<leader>l", function()
+			lint.try_lint()
+		end, { desc = "Trigger linting for current file" })
 	end,
 }
