@@ -183,5 +183,9 @@ return {
 		vim.lsp.config("roslyn", {})
 
 		vim.lsp.enable("biome")
+
+		vim.lsp.enable("clangd")
+
+		vim.lsp.enable("ast_grep")
 	end,
 }

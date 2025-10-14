@@ -40,6 +40,7 @@ return {
 				lua = { "stylua" },
 				-- python = { "black" },
 				markdown = { "prettier", "markdown-toc" },
+				c = { "ast_grep" },
 				-- ["markdown.mdx"] = { "prettier", "markdownlint", "markdown-toc" },
 			},
 			format_on_save = {

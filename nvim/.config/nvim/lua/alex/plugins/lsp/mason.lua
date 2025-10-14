@@ -58,6 +58,7 @@ return {
 				-- "eslint",
 				"marksman",
 				"biome",
+				"clangd",
 			},
 		})
 
@@ -72,6 +73,7 @@ return {
 				"denols",
 				"svelte",
 				"biome",
+				"ast_grep",
 			},
 
 			-- NOTE: mason BREAKING Change! Removed setup_handlers
