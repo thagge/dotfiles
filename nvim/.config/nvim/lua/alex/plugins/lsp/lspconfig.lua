@@ -164,6 +164,30 @@ return {
 		})
 		vim.lsp.enable("ts_ls")
 
+		vim.lsp.config("yamlls", {
+			settings = {
+				yaml = {
+					schemas = {
+						["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+						["https://json.schemastore.org/github-action.json"] = "/.github/action.{yml,yaml}",
+						["https://json.schemastore.org/kustomization.json"] = "kustomization.{yml,yaml}",
+						["https://json.schemastore.org/ansible-stable-2.9.json"] = "roles/tasks/*.{yml,yaml}",
+						["https://json.schemastore.org/ansible-stable-2.9.json"] = "roles/handlers/*.{yml,yaml}",
+						["https://json.schemastore.org/ansible-stable-2.9.json"] = "playbooks/*.{yml,yaml}",
+						["https://json.schemastore.org/ansible-stable-2.9.json"] = "inventories/*/group_vars/*.{yml,yaml}",
+						["https://json.schemastore.org/ansible-stable-2.9.json"] = "inventories/*/host_vars/*.{yml,yaml}",
+						["https://json.schemastore.org/ansible-stable-2.9.json"] = "inventories/*/*.{yml,yaml}",
+					},
+				},
+			},
+		})
+		vim.lsp.enable("yamlls")
+
+		vim.lsp.config("docker_compose_language_service", {
+			filetypes = { "yaml", "yml" },
+		})
+		vim.lsp.enable("docker_compose_language_service")
+
 		vim.lsp.config("svelte-language-server", {
 			filetypes = {
 				"svelte",
