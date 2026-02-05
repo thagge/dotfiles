@@ -1,5 +1,5 @@
 return {
-	"ggandor/leap.nvim",
+	"https://codeberg.org/andyg/leap.nvim",
 	event = "VeryLazy",
 	config = function()
 		vim.keymap.set({ "n", "x", "o" }, "<leader>h", "<Plug>(leap)", { desc = "Leap to clonest char by 2" })
