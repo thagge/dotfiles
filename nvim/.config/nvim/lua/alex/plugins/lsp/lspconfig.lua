@@ -204,6 +204,7 @@ return {
 		})
 		vim.lsp.enable("bashls")
 		-- roslyn
+		vim.lsp.enable("roslyn")
 		vim.lsp.config("roslyn", {})
 
 		vim.lsp.enable("biome")

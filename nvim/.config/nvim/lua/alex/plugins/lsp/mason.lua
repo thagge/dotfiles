@@ -74,6 +74,8 @@ return {
 				"svelte",
 				"biome",
 				"ast_grep",
+				"roslyn",
+				"netcoredbg",
 			},
 
 			-- NOTE: mason BREAKING Change! Removed setup_handlers
