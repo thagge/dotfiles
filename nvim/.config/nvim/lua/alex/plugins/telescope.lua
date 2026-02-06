@@ -34,6 +34,14 @@ return {
 						},
 					},
 				},
+				file_ignore_patterns = {
+					"^node_modules/",
+					"build/",
+					"dist/",
+					"yarn.lock",
+					"^bin/",
+					"^.idea/",
+				},
 			},
 		})
 

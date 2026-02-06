@@ -1,0 +1,23 @@
+[font.bold]
+family = "0xProto Nerd Font Mono"
+style = "bold"
+
+[font.italic]
+family = "0xProto Nerd Font Mono"
+style = "italic"
+
+[font.normal]
+family = "0xProto Nerd font Mono"
+style = "Regular"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 5
+y = 5

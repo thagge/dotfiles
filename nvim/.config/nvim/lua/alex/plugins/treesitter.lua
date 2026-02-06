@@ -34,6 +34,8 @@ return {
 					"vimdoc",
 					"c_sharp",
 					"razor",
+					"markdown",
+					"markdown_inline",
 				},
 				incremental_selection = {
 					enable = true,

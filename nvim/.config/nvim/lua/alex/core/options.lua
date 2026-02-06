@@ -42,3 +42,4 @@ vim.opt.clipboard:append("unnamedplus")
 vim.opt.hlsearch = true
 
 vim.g.editorconfig = true
+vim.opt.conceallevel = 2
