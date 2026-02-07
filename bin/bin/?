@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Error: A search string must be set, e.g. on \"Why are IFK Göteborg the best soccer team?\"."
+  exit 1
+fi
+
+serch_term=$(echo "$1" | tr ' ' '+')
+
+w3m "duckduckgo.com/lite/?q=${serch_term}"

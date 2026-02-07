@@ -204,13 +204,7 @@ return {
 			{
 				"<leader>pc",
 				function()
-					local startPath
-					if vim.fn.has("win32") then
-						startPath = "C:"
-					else
-						startPath = "~"
-					end
-					require("snacks").picker.files({ cwd = startPath .. "/dotfiles/nvim/.config/nvim/lua" })
+					require("snacks").picker.files({ cwd = "~/dotfiles/nvim/.config/nvim/lua" })
 				end,
 				desc = "Find Config File",
 			},

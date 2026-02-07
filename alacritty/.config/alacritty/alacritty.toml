@@ -14,6 +14,9 @@ style = "Regular"
 history = 10000
 multiplier = 3
 
+[window]
+opacity = 0.9
+
 [window.class]
 general = "Alacritty"
 instance = "Alacritty"
