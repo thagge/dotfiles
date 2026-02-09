@@ -117,7 +117,7 @@ return {
 							else
 								startPath = "~"
 							end
-							return "ascii-image-converter " .. startPath .. "/Pictures/Me.jpeg -C -c"
+							return "ascii-image-converter " .. startPath .. "/images/me.png -C -c"
 						end)(),
 						random = 15,
 						pane = 2,
