@@ -26,3 +26,4 @@ export PATH="/home/alex/.local/bin:$PATH"
 
 # opencode
 export PATH=/home/alex/.opencode/bin:$PATH
+. "$HOME/.cargo/env"
