@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-cd ~/Obsidian/Zettelkasten/inbox 
-nvim *.md
