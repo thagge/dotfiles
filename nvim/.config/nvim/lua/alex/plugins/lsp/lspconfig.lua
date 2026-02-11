@@ -104,47 +104,16 @@ return {
 		})
 		vim.lsp.enable("lua_ls")
 
-		-- emmet_language_server
-		vim.lsp.config("emmet_language_server", {
-			filetypes = {
-				"css",
-				"eruby",
-				"html",
-				"javascript",
-				"javascriptreact",
-				"less",
-				"sass",
-				"scss",
-				"pug",
-				"typescriptreact",
-			},
-			init_options = {
-				includeLanguages = {},
-				excludeLanguages = {},
-				extensionsPath = {},
-				preferences = {},
-				showAbbreviationSuggestions = true,
-				showExpandedAbbreviation = "always",
-				showSuggestionsAsSnippets = false,
-				syntaxProfiles = {},
-				variables = {},
-			},
-		})
-		vim.lsp.enable("emmet_language_server")
-
-		-- emmet_ls
-		vim.lsp.config("emmet_ls", {
-			filetypes = {
-				"html",
-				"typescriptreact",
-				"javascriptreact",
-				"css",
-				"sass",
-				"scss",
-				"less",
-			},
-		})
-		vim.lsp.enable("emmet_ls")
+		local ts_inlay_hints = {
+			includeInlayParametersNameHints = "all",
+			includeInlayParametersNameHintsWhenArgumentsMatchesName = false,
+			IncludeInlayFunctionParameterTypeHints = true,
+			includeInlayVariableTypeHints = true,
+			includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+			includeInlayPropertyDeclarationTypeHints = true,
+			includeInlayFunctionLikeReturnTypeHints = true,
+			includeInlayEnumMemberValueHints = true,
+		}
 
 		-- ts_ls (TypeScript/JavaScript)
 		vim.lsp.config("ts_ls", {
@@ -159,6 +128,14 @@ return {
 				preferences = {
 					includeCompletionsForModuleExports = true,
 					includeCompletionsForImportStatements = true,
+				},
+			},
+			settings = {
+				typescript = {
+					inlayHints = ts_inlay_hints,
+				},
+				javascript = {
+					inlayHints = ts_inlay_hints,
 				},
 			},
 		})

@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias vim='nvim'
 # Obsidian
 alias oo='cd /home/alex/Obsidian/Zettelkasten/'
 alias or='vim /home/alex/Obsidian/Zettelkasten/inbox/*.md'

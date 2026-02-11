@@ -63,6 +63,9 @@ return {
 					["html"] = {
 						enable_close = true,
 					},
+					["xaml"] = {
+						enable_close = true,
+					},
 					["typescript_react"] = {
 						enable_close = true,
 					},
