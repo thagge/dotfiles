@@ -47,11 +47,19 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>") -- open new tab
-vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>") -- close current tab
-vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>") -- go to next
-vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>") -- go to pre
+vim.keymap.set("n", "<leader>tx", "<cmd>BufferClose<CR>") -- close current tab
+vim.keymap.set("n", "<leader>tn", "<cmd>BufferNext<CR>") -- go to next
+vim.keymap.set("n", "<leader>tp", "<cmd>BufferPrevious<CR>") -- go to pre
 vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>") -- open current tab in new tab
-
+vim.keymap.set("n", "<leader>t1", "<cmd>BufferGoto 1<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t2", "<cmd>BufferGoto 2<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t3", "<cmd>BufferGoto 3<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t4", "<cmd>BufferGoto 4<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t5", "<cmd>BufferGoto 5<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t6", "<cmd>BufferGoto 6<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t7", "<cmd>BufferGoto 7<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t8", "<cmd>BufferGoto 8<CR>") -- close current tab
+vim.keymap.set("n", "<leader>t9", "<cmd>BufferGoto 9<CR>") -- close current tab
 -- split
 vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
