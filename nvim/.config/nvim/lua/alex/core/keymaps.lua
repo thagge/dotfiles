@@ -46,24 +46,35 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
-vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>") -- open new tab
-vim.keymap.set("n", "<leader>tx", "<cmd>BufferClose<CR>") -- close current tab
-vim.keymap.set("n", "<leader>tn", "<cmd>BufferNext<CR>") -- go to next
-vim.keymap.set("n", "<leader>tp", "<cmd>BufferPrevious<CR>") -- go to pre
-vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>") -- open current tab in new tab
-vim.keymap.set("n", "<leader>t1", "<cmd>BufferGoto 1<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t2", "<cmd>BufferGoto 2<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t3", "<cmd>BufferGoto 3<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t4", "<cmd>BufferGoto 4<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t5", "<cmd>BufferGoto 5<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t6", "<cmd>BufferGoto 6<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t7", "<cmd>BufferGoto 7<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t8", "<cmd>BufferGoto 8<CR>") -- close current tab
-vim.keymap.set("n", "<leader>t9", "<cmd>BufferGoto 9<CR>") -- close current tab
+vim.keymap.set("n", "<leader>tx", "<cmd>BufferClose<CR>", { desc = "Close current tab" })
+vim.keymap.set("n", "<leader>tn", "<cmd>BufferNext<CR>", { desc = "Go to next tab" })
+vim.keymap.set("n", "<leader>tp", "<cmd>BufferPrevious<CR>", { desc = "Go to prev tab" })
+vim.keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current tab in new tab" })
+vim.keymap.set(
+	"n",
+	"<leader>tc",
+	"<cmd>BufferCloseAllButCurrent<CR>",
+	{ desc = "Close all tabs except the current one" }
+)
+vim.keymap.set(
+	"n",
+	"<leader>tv",
+	"<cmd>BufferCloseAllButVisible<CR>",
+	{ desc = "Close all tabs except those that are visible" }
+)
+vim.keymap.set("n", "<leader>t1", "<cmd>BufferGoto 1<CR>", { desc = "Go to tab number 1" })
+vim.keymap.set("n", "<leader>t2", "<cmd>BufferGoto 2<CR>", { desc = "Go to tab number 2" })
+vim.keymap.set("n", "<leader>t3", "<cmd>BufferGoto 3<CR>", { desc = "Go to tab number 4" })
+vim.keymap.set("n", "<leader>t4", "<cmd>BufferGoto 4<CR>", { desc = "Go to tab number 3" })
+vim.keymap.set("n", "<leader>t5", "<cmd>BufferGoto 5<CR>", { desc = "Go to tab number 5" })
+vim.keymap.set("n", "<leader>t6", "<cmd>BufferGoto 6<CR>", { desc = "Go to tab number 6" })
+vim.keymap.set("n", "<leader>t7", "<cmd>BufferGoto 7<CR>", { desc = "Go to tab number 7" })
+vim.keymap.set("n", "<leader>t8", "<cmd>BufferGoto 8<CR>", { desc = "Go to tab number 8" })
+vim.keymap.set("n", "<leader>t9", "<cmd>BufferGoto 9<CR>", { desc = "Go to tab number 9" })
 -- split
 vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
-vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width and height
+vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
 -- Copy filepath to clipboard
