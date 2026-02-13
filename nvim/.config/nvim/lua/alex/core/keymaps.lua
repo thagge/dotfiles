@@ -76,6 +76,10 @@ vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }
 vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
+vim.keymap.set({'n', 't'}, '<C-h>', '<C-w>h')
+vim.keymap.set({'n', 't'}, '<C-j>', '<C-w>j')
+vim.keymap.set({'n', 't'}, '<C-k>', '<C-w>k')
+vim.keymap.set({'n', 't'}, '<C-l>', '<C-w>l')
 
 -- Copy filepath to clipboard
 vim.keymap.set("n", "<leader>fp", function()

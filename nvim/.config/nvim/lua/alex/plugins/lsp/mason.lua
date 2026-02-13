@@ -67,6 +67,8 @@ return {
 				"ast_grep",
 				"roslyn",
 				"netcoredbg",
+				"csharpier",
+				"shfmt",
 			},
 		})
 	end,

@@ -9,3 +9,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export DOTNET_ROOT="/Users/alex/.dotnet"
+
+export PATH="$PATH:$DOTNET_ROOT"
+
+# OpenClaw Completion

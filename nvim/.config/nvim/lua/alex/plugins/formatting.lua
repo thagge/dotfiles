@@ -21,6 +21,8 @@ return {
 				lua = { "stylua" },
 				-- python = { "black" },
 				c = { "ast_grep" },
+				cs = { "csharpier" },
+				bash = { "shfmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
