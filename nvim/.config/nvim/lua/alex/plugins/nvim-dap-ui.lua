@@ -1,25 +1,18 @@
-return {
-	-- UI for debugging
-	"rcarriga/nvim-dap-ui",
-	dependencies = {
-		"mfussenegger/nvim-dap",
-	},
-	config = function()
-		local dapui = require("dapui")
-		local dap = require("dap")
+vim.pack.add({ "https://github.com/rcarriga/nvim-dap-ui" }, { confirm = false })
 
-		--- open ui immediately when debugging starts
-		dap.listeners.after.event_initialized["dapui_config"] = function()
-			dapui.open()
-		end
-		dap.listeners.before.event_terminated["dapui_config"] = function()
-			dapui.close()
-		end
-		dap.listeners.before.event_exited["dapui_config"] = function()
-			dapui.close()
-		end
+local dapui = require("dapui")
+local dap = require("dap")
 
-		-- default configuration
-		dapui.setup()
-	end,
-}
+--- open ui immediately when debugging starts
+dap.listeners.after.event_initialized["dapui_config"] = function()
+	dapui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+	dapui.close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+	dapui.close()
+end
+
+-- default configuration
+dapui.setup()

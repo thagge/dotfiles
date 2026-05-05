@@ -1,76 +1,71 @@
-return {
-	{
-		"nvim-treesitter/nvim-treesitter",
-		event = { "BufReadPre", "BufNewFile" },
-		build = ":TSUpdate",
-		config = function()
-			local treesitter = require("nvim-treesitter")
+vim.pack.add({ "https://github.com/nvim-treesitter/nvim-treesitter" }, { confirm = false })
+require("nvim-treesitter.install").update("all")
+require("nvim-treesitter.config").setup({
+	auto_install = true, -- autoinstall languages that are not installed yet
+})
 
-			treesitter.setup({
-				highlight = {
-					enable = true,
-				},
-				indent = {
-					enable = true,
-				},
-				ensure_installed = {
-					"json",
-					"javascript",
-					"typescript",
-					"tsx",
-					"yaml",
-					"html",
-					"css",
-					"http",
-					"markdown",
-					"markdown_inline",
-					"svelte",
-					"graphql",
-					"bash",
-					"lua",
-					"vim",
-					"dockerfile",
-					"gitignore",
-					"vimdoc",
-					"c_sharp",
-					"razor",
-					"markdown",
-					"markdown_inline",
-				},
-				incremental_selection = {
-					enable = true,
-					keymaps = {
-						init_selection = "<C-space>",
-						node_incremental = "<C-space>",
-						scope_incremental = false,
-					},
-				},
-				additional_vim_regex_highlighting = false,
-			})
-		end,
+require("nvim-treesitter").setup({
+	highlight = {
+		enable = true,
 	},
-	{
-		"windwp/nvim-ts-autotag",
-		ft = { "html", "xml", "javascript", "typescript", "javascriptreact", "typescriptreact", "svelte" },
-		config = function()
-			require("nvim-ts-autotag").setup({
-				opts = {
-					enable_close = true,
-					enable_rename = true,
-					enable_close_on_slash = false,
-				},
-				per_filetype = {
-					["html"] = {
-						enable_close = true,
-					},
-					["xaml"] = {
-						enable_close = true,
-					},
-					["typescript_react"] = {
-						enable_close = true,
-					},
-				},
-			})
-		end,
+	indent = {
+		enable = true,
 	},
-}
+	ensure_installed = {
+		"json",
+		"javascript",
+		"typescript",
+		"tsx",
+		"yaml",
+		"html",
+		"css",
+		"http",
+		"markdown",
+		"markdown_inline",
+		"svelte",
+		"graphql",
+		"bash",
+		"lua",
+		"vim",
+		"dockerfile",
+		"gitignore",
+		"vimdoc",
+		"c_sharp",
+		"razor",
+		"markdown",
+		"markdown_inline",
+	},
+	incremental_selection = {
+		enable = true,
+		keymaps = {
+			init_selection = "<C-space>",
+			node_incremental = "<C-space>",
+			scope_incremental = false,
+		},
+	},
+	additional_vim_regex_highlighting = false,
+})
+
+vim.pack.add({ {
+	src = "https://github.com/windwp/nvim-ts-autotag",
+	data = { ft = { "html", "xml", "javascript", "typescript", "javascriptreact", "typescriptreact", "svelte" } }
+} }, { confirm = false })
+
+require("nvim-ts-autotag").setup({
+	opts = {
+		enable_close = true,
+		enable_rename = true,
+		enable_close_on_slash = false,
+	},
+	per_filetype = {
+		["html"] = {
+			enable_close = true,
+		},
+		["xaml"] = {
+			enable_close = true,
+		},
+		["typescript_react"] = {
+			enable_close = true,
+		},
+	},
+})

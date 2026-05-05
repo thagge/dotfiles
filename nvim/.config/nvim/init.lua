@@ -1,3 +1,3 @@
 require("alex.core")
 require("alex.lazy")
-require("current-theme")
+-- require("current-theme")
