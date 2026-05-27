@@ -1,3 +1,6 @@
+require("vim._core.ui2").enable({})
+
 require("alex.core")
-require("alex.lazy")
+require("alex.commands")
+require("alex.pack")
 require("current-theme")
