@@ -43,3 +43,4 @@ vim.opt.hlsearch = true
 
 vim.g.editorconfig = true
 vim.opt.conceallevel = 2
+vim.o.cmdheight = 0

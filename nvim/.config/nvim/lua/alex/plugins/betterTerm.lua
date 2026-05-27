@@ -1,0 +1,15 @@
+require("betterTerm").setup({
+	prefix = "Term",
+	position = "bot",
+	size = math.floor(vim.o.lines / 2),
+	startInserted = true,
+	show_tabs = true,
+	new_tab_mapping = "<C-t>",
+	jump_tab_mapping = "<C-$tab>",
+	active_tab_hl = "TabLineSel",
+	inactive_tab_hl = "TabLine",
+	new_tab_hl = "BetterTermSymbol",
+	new_tab_icon = "+",
+	index_base = 0,
+	predefined = {},
+})
