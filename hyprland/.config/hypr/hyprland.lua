@@ -293,9 +293,6 @@ hl.bind(mainMod .. " + " .. "Q", hl.dsp.exec_cmd("alacritty"))
 
 hl.bind(mainMod .. " + " .. "C", hl.dsp.window.close())
 
-hl.bind(mainMod .. " + " .. "M",
-    hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit"))
-
 hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("nautilus"))
 
 hl.bind(mainMod .. " + " .. "V", hl.dsp.window.float())
@@ -305,7 +302,7 @@ hl.bind(mainMod .. " + " .. "R", hl.dsp.exec_cmd("wofi --show drun"))
 hl.bind(mainMod .. " + " .. "P", hl.dsp.window.pseudo())
 
 
-hl.bind(mainMod .. " + " .. "L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + " .. "M", hl.dsp.exec_cmd("hyprlock"))
 
 -- dwindle
 
